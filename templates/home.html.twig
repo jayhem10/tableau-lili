@@ -1,0 +1,197 @@
+{% extends 'base.html.twig' %}
+    
+    {% block body %}
+    
+    <body id="page-top">
+        <!-- Navigation-->
+        <nav class="navbar navbar-expand-lg navbar-light fixed-top py-3" id="mainNav">
+            <div class="container">
+                <a class="navbar-brand js-scroll-trigger" href="#page-top"><i class="fas fa-4x text-black fa-palette"></i></a>
+                <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+                <div class="collapse navbar-collapse" id="navbarResponsive">
+                    <ul class="navbar-nav ml-auto my-2 my-lg-0">
+                        <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#about">À propos</a></li>
+                        <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#services">Mes services</a></li>
+                        <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#portfolio">Portfolio</a></li>
+                        <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#contact">Contact</a></li>
+                        <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#galerie">Joli bouton</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <!-- Masthead-->
+        <header class="masthead">
+            <div class="container h-100">
+                <div class="row h-100 align-items-center justify-content-center text-center">
+                    <div class="col-lg-10 align-self-end">
+                        <h1 class="etoile text-white">L'étoile de Lili</h1>
+                        <hr class="divider my-4" />
+                    </div>
+                    <div class="col-lg-8 align-self-baseline">
+                        <p class="text-white font-weight-light mb-5">Ici, vous êtes dans mon petit jardin secret. Il renferme une de mes grandes passions, la peinture.</p>
+                        <a class="btn btn-warning btn-xl js-scroll-trigger" href="#about">Qui suis-je?</a>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <!-- About-->
+        <section class="page-section bg-warning" id="about">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-lg-8 text-center">
+                        <h2 class="text-black mt-0">Appelez-moi Lili :)</h2>
+                        <hr class="divider light my-4" />
+                        <p class="text-black-50 mb-4">It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).</p>
+        </section>
+        <!-- Services-->
+        <section class="page-section" id="services">
+            <div class="container">
+                <h2 class="text-center mt-0">À votre service</h2>
+                <hr class="divider my-4" />
+                <div class="row">
+                    <div class="col-lg-3 col-md-6 text-center">
+                        <div class="mt-5">
+                            <i class="fas fa-4x fa-gem text-info mb-4"></i>
+                            <h3 class="h4 mb-2">Matériaux de qualité</h3>
+                            <p class="text-muted mb-0">J'utilise des peintures et des toiles de qualité</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 text-center">
+                        <div class="mt-5">
+                            <i class="fas fa-4x fa-paint-brush text-success mb-4"></i></i>
+                            <h3 class="h4 mb-2">Personnalisation</h3>
+                            <p class="text-muted mb-0">Vous pouvez sélectionnez des couleurs et un format et je me laisse inspirer pour un tableau d'exception*</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 text-center">
+                        <div class="mt-5">
+                            <i class="fas fa-4x fa-paper-plane text-warning mb-4"></i>
+                            <h3 class="h4 mb-2">Envoi postal sécurisé</h3>
+                            <p class="text-muted mb-0">Envoi sécurisé qui assure la réception de votre oeuvre sans encombres</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 text-center">
+                        <div class="mt-5">
+                            <i class="fas fa-4x fa-heart text-danger mb-4"></i>
+                            <h3 class="h4 mb-2">Fait avec amour</h3>
+                            <p class="text-muted mb-0">Chaque oeuvre est fait avec amour, ce qui garanti un résultat unique</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <p class="asterix container text-muted mt-5">*Contactez-moi pour en connaître les modalités</p>
+        </section>
+        <!-- Portfolio-->
+        <div id="portfolio">
+            <div class="container-fluid p-0">
+                <div class="row no-gutters">
+                    <div class="col-lg-4 col-sm-6">
+                        <a class="portfolio-box" href="img/portfolio/fullsize/tab1.jpg">
+                            <img class="img-fluid" src="img/portfolio/thumbnails/tab1.jpg"  alt="" />
+                            <div class="portfolio-box-caption">
+                                <div class="project-category text-white-50">Fleuve impromptue</div>
+                                <div class="project-name">Vendu</div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-lg-4 col-sm-6">
+                        <a class="portfolio-box" href="img/portfolio/fullsize/2.jpg">
+                            <img class="img-fluid" src="img/portfolio/thumbnails/2.jpg" alt="" />
+                            <div class="portfolio-box-caption">
+                                <div class="project-category text-white-50">Category</div>
+                                <div class="project-name">Project Name</div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-lg-4 col-sm-6">
+                        <a class="portfolio-box" href="img/portfolio/fullsize/3.jpg">
+                            <img class="img-fluid" src="img/portfolio/thumbnails/3.jpg" alt="" />
+                            <div class="portfolio-box-caption">
+                                <div class="project-category s toiles text-white-50">Category</div>
+                                <div class="project-name">Project Name</div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-lg-4 col-sm-6">
+                        <a class="portfolio-box" href="img/portfolio/fullsize/4.jpg">
+                            <img class="img-fluid" src="img/portfolio/thumbnails/4.jpg" alt="" />
+                            <div class="portfolio-box-caption">
+                                <div class="project-category text-white-50">Category</div>
+                                <div class="project-name">Project Name</div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-lg-4 col-sm-6">
+                        <a class="portfolio-box" href="img/portfolio/fullsize/5.jpg">
+                            <img class="img-fluid" src="img/portfolio/thumbnails/5.jpg" alt="" />
+                            <div class="portfolio-box-caption">
+                                <div class="project-category text-white-50">Category</div>
+                                <div class="project-name">Project Name</div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-lg-4 col-sm-6">
+                        <a class="portfolio-box" href="img/portfolio/fullsize/6.jpg">
+                            <img class="img-fluid" src="img/portfolio/thumbnails/6.jpg" alt="" />
+                            <div class="portfolio-box-caption p-3">
+                                <div class="project-category text-white-50">Category</div>
+                                <div class="project-name">Project Name</div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Call to action-->
+        <section class="page-section bg-black text-white">
+            <div class="container text-center">
+                <h3 class="text-gold mb-3">Pour voir les tableaux disponibles à la vente, rendez-vous sur mon instagram ;)</h3>
+                <a class="js-scroll-trigger text-gold" href="#contact"><i class="fas fa-3x fa-arrow-circle-down mt-3"></i></a>
+            </div>
+        </section>
+        <!-- Contact-->
+        <section class="page-section" id="contact">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-lg-8 text-center">
+                        <h2 class="mt-0">Gardons le contact</h2>
+                        <hr class="divider my-4" />
+                        <p class="text-muted mb-5">Si vous êtes intéréssé par mon travail, n'hésitez pas à me contacter ( ou me suivre ) via instagram et par courriel :)</p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-4 ml-auto text-center mb-5 mb-lg-0">
+                        <i class="fab fa-instagram fa-3x mb-3 text-muted"></i>
+                        <a class="d-block btn btn-sm btn-warning" target="_blank" href="https://www.instagram.com/leiliiilei/?hl=fr">Instagram</a>
+                    </div>
+                    <div class="col-lg-4 mr-auto text-center">
+                        <i class="fas fa-envelope fa-3x mb-3 text-muted"></i>
+                        <!-- Make sure to change the email address in BOTH the anchor text and the link target below!-->
+                        <a class="d-block btn btn-sm btn-warning" href="ll1968.vesoul@gmail.com">Courriel</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <div class="container text-center mb-5" id="galerie">
+            <p class="text-black font-weight-light pb-2"> Venez voir une sélection de mes toiles en cliquant sur ce joli bouton :)</p>
+            <a class="btn btn-warning btn-xl js-scroll-trigger" href="{{ path("tableau") }}">Le joli bouton</a>
+        </div>
+
+        {% block footer %}
+        {% if not app.user %}
+                <!-- Footer-->
+                <footer class="bg-light py-5">
+                    <div class="small text-center text-muted"><a class="text-muted" href="{{ path("login") }}">Administration</a> / Copyright © 2020</div>
+                </footer>
+            {% else %}
+                <footer class="bg-light py-5">
+                    <div class="small text-center text-muted"><a class="text-muted" href="{{ path("logout") }}">Déconnexion</a> / Copyright © 2020</div>
+                </footer>
+        {% endif %}
+
+        {% endblock %}
+
+
+    {% endblock %}

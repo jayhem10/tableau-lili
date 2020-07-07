@@ -1,0 +1,23 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Supprimer{% endblock %}
+
+
+
+{% block body %}
+
+    <div class="container  my-5">
+
+        <h1 class="">Supprimer?</h1>
+            <div class="row ">
+                <div class="col-12 mt-5">
+                    <form method="post">
+                    <input class="btn btn-primary center-block" name="confirm" type="submit"  value="Je supprime">
+                    <a class="btn btn-danger ml-3" href="{{ path('tableau', { 'id': image.id})}}" role="button">{% trans %}En fait, non!{% endtrans %}</a>
+                </div>
+            </form>
+            </div>
+    </div>
+
+
+{% endblock %}

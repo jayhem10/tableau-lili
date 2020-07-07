@@ -1,0 +1,36 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Connexion au site{% endblock %}
+
+
+{% block body %}
+
+    {% if error %}
+        <div class="alert alert-danger">{{ error.messageKey|trans(error.messageData, 'security') }}</div>
+    {% endif %}
+
+
+
+    <div class="wrapper fadeInDown">
+        <div id="formContent">
+          <!-- Tabs Titles -->
+      
+          <!-- Icon -->
+          <div class="fadeIn first">
+            <img src="img/palette.svg" id="icon" alt="User Icon" />
+          </div>
+      
+          <!-- Login Form -->
+          <form action="{{ path('login') }}" method="post">
+            <input type="text" id="username" class="fadeIn second" name="_username" placeholder="email">
+            <input type="text" id="password" class="fadeIn third" name="_password" placeholder="mot de passe">
+            <input type="submit" class="fadeIn fourth" value="Connection">
+            <a class="btn btn-primary  fadeIn fourth mb-1" href="{{ path("homepage") }}">Retour</a>
+          </form>
+        </div>
+      </div>
+{% endblock %}
+
+  
+
+

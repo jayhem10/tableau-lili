@@ -1,0 +1,82 @@
+{% extends 'base.html.twig' %}
+    
+
+    {% block body %}
+    <div class="container my-5">
+        {% for message in app.flashes('delete') %}
+            <div class="alert-info text-center mt-3" role="alert">
+                {{ message }}
+            </div>
+        {% endfor %}
+        <div class="container my-5">
+            {% for message in app.flashes('ajouter') %}
+                <div class="alert-info text-center mt-3" role="alert">
+                    {{ message }}
+                </div>
+            {% endfor %}
+        </div>
+    </div>
+<header>
+    <div class="container my-5">
+        <div class="row h-100 align-items-center justify-content-center text-center">
+            <div class="col-lg-10 align-self-end">
+                <h1 class="etoile text-black">Mes toiles</h1>
+                <hr class="divider my-4" />
+            </div>
+            <div class="col-lg-8 align-self-baseline">
+                <p class="text-black font-weight-light mb-5">Vous venez de mettre un pied dans mon atelier. En espérant que vous vous y sentirez bien.</p>
+                <a class="btn btn-warning btn-xl js-scroll-trigger mt-3" href="{{ path("homepage") }}">Faire demi-tour</a>
+
+                {% if app.user %}
+                <a class="btn btn-warning btn-xl js-scroll-trigger mt-3" href="{{ path("ajouter") }}">Ajouter un tableau</a>
+                {% endif %}
+            </div>
+        </div>
+    </div>
+</header>
+
+
+{% if not app.user %}
+    <div class="demo-gallery container">
+        <ul id="lightgallery" class="list-unstyled row">
+            {% for image in uploads %}
+            <li class="col-xs-6 col-sm-4 col-md-3" data-responsive="img/compu.jpg" data-src="{{ image.name }}" data-sub-html="<h4> {{ image.dimension }} </h4><p>{{ image.description }}</p>" data-pinterest-text="Pin it1" data-tweet-text="share on twitter 1">
+                <a href="">
+                    <img class="img-responsive" src="{{ image.name }}" alt="Thumb-1">
+                </a>
+            </li>
+            {% endfor %}
+            </ul>
+    </div>
+    <div class="d-flex justify-content-center">
+        <div class="pagination">
+            {{ knp_pagination_render(uploads)}}
+        </div>
+    </div>
+
+
+
+{% else %}
+
+    <div class="container">   
+        <div class="row text-center ">
+            {% for image in uploads %}
+            <div class="col-lg-4 col-md-6 col-sm-12 my-5">
+                    <img src="{{ image.name }}" alt="Image" width="300" height="300" />
+                <a class="btn btn-danger mt-2" href="{{ path('tableau_delete', { 'id': image.id})}}" role="button">Supprimer</a>
+            </div>
+            {% endfor %}
+        </div>
+    </div>
+    
+    <div class="d-flex justify-content-center">
+        <div class="pagination">
+            {{ knp_pagination_render(uploads)}}
+        </div>
+    </div>
+
+{% endif %}
+
+
+{% endblock %}
+
