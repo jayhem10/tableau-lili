@@ -70,7 +70,9 @@ class HomeController extends AbstractController {
             $form->handleRequest($request);
             if ($form->isSubmitted() && $form->isValid()){
                 $file = $upload->getName();
+                dump($file);
                 $fileName = 'img/tableau/' . md5(uniqid()).'.'.$file->guessExtension();
+                dump($file);
                 $file->move($this->getParameter('upload_directory'), $fileName);
                 $upload->setName($fileName);
                 $manager->persist($upload);
